@@ -1,0 +1,36 @@
+/* ==================================
+   Callouts (Alerts)
+   ================================== */
+.callout {
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+  border: 1px solid transparent;
+}
+
+.callout.error {
+  background: #fdecea;
+  border-color: #f5c2c7;
+  color: #8b1e2d;
+}
+
+.callout.warning {
+  background: #fff8e6;
+  border-color: #f2d99f;
+  color: #73510d;
+}
+
+/* ==================================
+   Responsive Design
+   ================================== */
+@media (max-width: 1080px) {
+  .grid-layout,
+  .login-card,
+  .app-shell,
+  .encounter-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    min-height: auto;
+  }
+}
