@@ -1,0 +1,316 @@
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2a37;
+  background: #f3f6f9;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #f3f6f9;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.primary-button,
+.secondary-button,
+.patient-link,
+.encounter-link {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.primary-button {
+  background: #0f4c81;
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+
+.primary-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.secondary-button {
+  background: #fff;
+  color: #1f2a37;
+  border-color: #cbd5e1;
+  padding: 0.65rem 1rem;
+}
+
+.login-shell {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.login-card {
+  width: min(960px, 100%);
+  background: #fff;
+  border: 1px solid #dbe4ec;
+  border-radius: 16px;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+}
+
+.login-intro h1,
+.sidebar-header h1,
+.page-header h2,
+.panel-header h2,
+.demo-credentials h2 {
+  margin: 0 0 0.5rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-form label,
+.encounter-editor label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-weight: 600;
+}
+
+input,
+textarea {
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 0.8rem;
+  background: #fff;
+}
+
+.demo-credentials {
+  grid-column: 1 / -1;
+  border-top: 1px solid #e5edf5;
+  padding-top: 1.5rem;
+}
+
+.demo-credentials table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.demo-credentials th,
+.demo-credentials td {
+  text-align: left;
+  padding: 0.75rem;
+  border-bottom: 1px solid #eef3f8;
+}
+
+.app-shell {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: #103b5f;
+  color: #fff;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sidebar-header p {
+  margin: 0;
+  color: #d7e7f6;
+}
+
+.sidebar-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.patient-link {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  padding: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
+  text-align: left;
+}
+
+.patient-link.active {
+  background: #fff;
+  color: #103b5f;
+}
+
+.main-layout {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.page-header {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #dbe4ec;
+  padding: 1rem 1.25rem;
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid #dbe4ec;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.summary-chip {
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.85rem;
+  text-transform: capitalize;
+}
+
+.summary-chip.idle {
+  background: #eef2f7;
+}
+
+.summary-chip.generating {
+  background: #fff4d6;
+}
+
+.summary-chip.completed {
+  background: #dff5e8;
+}
+
+.summary-chip.failed {
+  background: #fde4e1;
+}
+
+.summary-block label,
+.meta-line {
+  color: #526272;
+  font-size: 0.92rem;
+}
+
+.summary-block p,
+.watch-list {
+  margin: 0.35rem 0 0.9rem;
+}
+
+.watch-list {
+  padding-left: 1.2rem;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.editor {
+  width: 100%;
+  min-height: 360px;
+  resize: vertical;
+  margin-top: 0.75rem;
+}
+
+.encounter-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 1rem;
+}
+
+.encounter-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.encounter-link {
+  background: #f8fbfd;
+  border-color: #dbe4ec;
+  padding: 0.75rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.encounter-link.active {
+  border-color: #0f4c81;
+  background: #edf5fb;
+}
+
+.encounter-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.encounter-textarea {
+  min-height: 280px;
+}
+
+.callout {
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+  border: 1px solid transparent;
+}
+
+.callout.error {
+  background: #fdecea;
+  border-color: #f5c2c7;
+  color: #8b1e2d;
+}
+
+.callout.warning {
+  background: #fff8e6;
+  border-color: #f2d99f;
+  color: #73510d;
+}
+
+.loading-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #526272;
+}
+
+@media (max-width: 1080px) {
+  .grid-layout,
+  .login-card,
+  .app-shell,
+  .encounter-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    min-height: auto;
+  }
+}
