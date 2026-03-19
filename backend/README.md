@@ -56,25 +56,15 @@ Backend `.env` fields:
 AI_PROVIDER=openai
 AI_REQUEST_TIMEOUT_SECONDS=20
 
-OPENAI_API_KEY=
-OPENAI_MODEL=gpt-4.1-mini
-OPENAI_BASE_URL=https://api.openai.com/v1
-
-ANTHROPIC_API_KEY=
-ANTHROPIC_MODEL=claude-3-5-haiku-latest
-ANTHROPIC_BASE_URL=https://api.anthropic.com/v1
-
-# Optional shared aliases:
 LLM_API_KEY=
-LLM_MODEL=
-LLM_BASE_URL=
-
-ANTHROPIC_VERSION=2023-06-01
+LLM_MODEL=gpt-4.1-mini
+LLM_BASE_URL=https://api.openai.com/v1
+LLM_API_VERSION=2023-06-01
 ```
 
-Use `AI_PROVIDER=openai` with `OPENAI_*` values for OpenAI-compatible endpoints such as OpenAI or OpenRouter.
-Use `AI_PROVIDER=anthropic` with `ANTHROPIC_*` values for Anthropic's native Messages API.
-The app also accepts shared `LLM_*` aliases if you prefer one provider-agnostic env shape.
+Use `AI_PROVIDER=openai` for OpenAI-compatible endpoints such as OpenAI or OpenRouter.
+Use `AI_PROVIDER=anthropic` for Anthropic's native Messages API.
+`LLM_API_VERSION` is mainly relevant for providers that require an explicit API version header, such as Anthropic.
 
 If the selected AI provider is missing a key or returns an error, the frontend shows:
 
