@@ -1,0 +1,40 @@
+/* ==================================
+   Summary Card
+   ================================== */
+.summary-chip {
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.85rem;
+  text-transform: capitalize;
+}
+
+.summary-chip.idle {
+  background: #eef2f7;
+}
+
+.summary-chip.generating {
+  background: #fff4d6;
+}
+
+.summary-chip.completed {
+  background: #dff5e8;
+}
+
+.summary-chip.failed {
+  background: #fde4e1;
+}
+
+.summary-block label,
+.meta-line {
+  color: #526272;
+  font-size: 0.92rem;
+}
+
+.summary-block p,
+.watch-list {
+  margin: 0.35rem 0 0.9rem;
+}
+
+.watch-list {
+  padding-left: 1.2rem;
+}

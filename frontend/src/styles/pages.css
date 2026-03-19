@@ -1,0 +1,62 @@
+/* ==================================
+   Login Page
+   ================================== */
+.login-shell {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.login-card {
+  width: min(960px, 100%);
+  background: #fff;
+  border: 1px solid #dbe4ec;
+  border-radius: 16px;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+}
+
+.login-intro h1,
+.sidebar-header h1,
+.page-header h2,
+.panel-header h2,
+.demo-credentials h2 {
+  margin: 0 0 0.5rem;
+}
+
+/* ==================================
+   Demo Credentials Table
+   ================================== */
+.demo-credentials {
+  grid-column: 1 / -1;
+  border-top: 1px solid #e5edf5;
+  padding-top: 1.5rem;
+}
+
+.demo-credentials table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.demo-credentials th,
+.demo-credentials td {
+  text-align: left;
+  padding: 0.75rem;
+  border-bottom: 1px solid #eef3f8;
+}
+
+/* ==================================
+   Loading Screen
+   ================================== */
+.loading-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #526272;
+}
